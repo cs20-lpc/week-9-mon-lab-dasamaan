@@ -29,7 +29,7 @@ template <typename T>
 T LinkedQueue<T>::back() const {
     // TODO
     if (isEmpty()) {
-        throw string("back: queue is empty");
+        throw string("back: error, queue is empty, cannot access the back");
     }
     return last->value;
 }
@@ -95,7 +95,7 @@ template <typename T>
 T LinkedQueue<T>::front() const {
     // TODO
     if (isEmpty()) {
-        throw string("front: queue is empty");
+        throw string("front: error, queue is empty, cannot access the front");
     }
     return head->value;
 }
